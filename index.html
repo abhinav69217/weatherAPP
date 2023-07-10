@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header id="mainHeader">
+        <a href="#" class="logo">
+          <img
+            class="headerLogo"
+            src="https://cdn-icons-png.flaticon.com/512/4052/4052984.png"
+            alt="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- End of header-->
+
+      <!-- Home section  -->
+      <section id="home">
+        <div class="search">
+          <div class="search-container">
+            <form action="">
+              <label for="cityInput"><strong>Enter city:</strong></label>
+              <input type="text" placeholder="City Name..." required />
+              <span class="buttonclass">
+                <button id="subBtn" type="submit">
+                  <img src="./search.png" class="searchImg" />
+                </button>
+              </span>
+            </form>
+          </div>
+        </div>
+
+        <div class="svg" id="svgContainer">
+          <div id="shimmerCardContainer">
+            <div class="shimmer-card">
+              <div class="shimmer-card-header"></div>
+              <div class="shimmer-card-body"></div>
+            </div>
+          </div>
+
+          <img
+            id="svgImg"
+            class="svgImg"
+            src="./weather-color-moon-cloud-light-svgrepo-com.svg"
+          />
+        </div>
+      </section>
+    </div>
+    <!-- End of Home Section -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
